@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.Data", "SimpleCRM.Data\SimpleCRM.Data.csproj", "{4DC0838F-F18D-45E3-90A8-9D3ECF0A7FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.Data.Contracts", "SimpleCRM.Data.Contracts\SimpleCRM.Data.Contracts.csproj", "{03EF72B3-2731-4014-B99C-03D796D2AE5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.Model", "SimpleCRM.Model\SimpleCRM.Model.csproj", "{04CBB3FB-4336-42F8-9E17-6B2DF3ED6F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.UI.WPF", "SimpleCRM.UI.WPF\SimpleCRM.UI.WPF.csproj", "{986FD705-82BF-4AD2-8EE3-14A462E43539}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AC2F4EC-2092-4415-A0EF-5405C327F970}"
+	ProjectSection(SolutionItems) = preProject
+		README = README
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DC0838F-F18D-45E3-90A8-9D3ECF0A7FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC0838F-F18D-45E3-90A8-9D3ECF0A7FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC0838F-F18D-45E3-90A8-9D3ECF0A7FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC0838F-F18D-45E3-90A8-9D3ECF0A7FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EF72B3-2731-4014-B99C-03D796D2AE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EF72B3-2731-4014-B99C-03D796D2AE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EF72B3-2731-4014-B99C-03D796D2AE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EF72B3-2731-4014-B99C-03D796D2AE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CBB3FB-4336-42F8-9E17-6B2DF3ED6F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CBB3FB-4336-42F8-9E17-6B2DF3ED6F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CBB3FB-4336-42F8-9E17-6B2DF3ED6F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CBB3FB-4336-42F8-9E17-6B2DF3ED6F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986FD705-82BF-4AD2-8EE3-14A462E43539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986FD705-82BF-4AD2-8EE3-14A462E43539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986FD705-82BF-4AD2-8EE3-14A462E43539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986FD705-82BF-4AD2-8EE3-14A462E43539}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

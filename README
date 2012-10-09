@@ -1,0 +1,10 @@
+Simple CRM is the example application used for demonstration of 
+console-based management interfaces in the blog series
+"Console Based Configuration Managment with CLAP" on http://www.cajuncodemonkey.com. 
+The series starts here: http://www.cajuncodemonkey.com/2012/10/console-based-configuration-management.html
+
+Please post any questions or issues to the blog or gitbug:
+https://github.com/krcourville/ConsoleBasedConfigurationManagementWithClap
+
+Credits:
+Code infrastructure is heavily used from Pluralsight's course, "Building ASP.NET MVC Apps with EF Code First, HTML5, and jQuery".
