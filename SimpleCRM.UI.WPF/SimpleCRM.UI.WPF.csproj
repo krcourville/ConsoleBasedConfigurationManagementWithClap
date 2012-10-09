@@ -35,8 +35,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4">
+      <HintPath>..\packages\MvvmLight.4.1.23.0\lib\net40\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>..\packages\MvvmLight.4.1.23.0\lib\net40\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\MvvmLight.4.1.23.0\lib\net40\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\packages\MvvmLight.4.1.23.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +71,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\Generator.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="ViewModel\ViewModels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewModels.tt</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,11 +111,40 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="ViewModel\ViewModels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ViewModels.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MVVMLight.Nuget.Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCRM.Data.Contracts\SimpleCRM.Data.Contracts.csproj">
+      <Project>{03ef72b3-2731-4014-b99c-03d796d2ae5c}</Project>
+      <Name>SimpleCRM.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCRM.Data\SimpleCRM.Data.csproj">
+      <Project>{4dc0838f-f18d-45e3-90a8-9d3ecf0a7fba}</Project>
+      <Name>SimpleCRM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCRM.Model\SimpleCRM.Model.csproj">
+      <Project>{04cbb3fb-4336-42f8-9e17-6b2df3ed6f28}</Project>
+      <Name>SimpleCRM.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCRM.Utility\SimpleCRM.Utility.csproj">
+      <Project>{7d9af800-a71f-4bc8-a8d3-a19a83c8322e}</Project>
+      <Name>SimpleCRM.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

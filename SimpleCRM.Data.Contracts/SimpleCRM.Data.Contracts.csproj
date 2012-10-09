@@ -41,7 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISimpleCrmUow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCRM.Model\SimpleCRM.Model.csproj">
+      <Project>{04cbb3fb-4336-42f8-9e17-6b2df3ed6f28}</Project>
+      <Name>SimpleCRM.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

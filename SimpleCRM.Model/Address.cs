@@ -28,5 +28,7 @@ namespace SimpleCRM.Model
         [MaxLength(255)]
         public string Country { get; set; }
 
+        [MaxLength(255)]
+        public string County { get; set; }
     }
 }

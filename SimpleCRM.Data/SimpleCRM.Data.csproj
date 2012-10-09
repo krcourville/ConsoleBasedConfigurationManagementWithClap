@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EFRepository.cs" />
+    <Compile Include="Helpers\IRepositoryProvider.cs" />
+    <Compile Include="Helpers\PredicateBuilder.cs" />
+    <Compile Include="Helpers\RepositoryFactories.cs" />
+    <Compile Include="Helpers\RepositoryProvider.cs" />
+    <Compile Include="Helpers\SimpleCrmSampleDataInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleCrmDbContext.cs" />
+    <Compile Include="SimpleCrmUow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCRM.Data.Contracts\SimpleCRM.Data.Contracts.csproj">
+      <Project>{03ef72b3-2731-4014-b99c-03d796d2ae5c}</Project>
+      <Name>SimpleCRM.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCRM.Model\SimpleCRM.Model.csproj">
+      <Project>{04cbb3fb-4336-42f8-9e17-6b2df3ed6f28}</Project>
+      <Name>SimpleCRM.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

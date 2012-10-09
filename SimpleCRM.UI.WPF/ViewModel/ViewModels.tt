@@ -1,0 +1,16 @@
+﻿<#@ template debug="true" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)\SimpleCRM.Model.dll" #>
+<#@ assembly name="$(TargetDir)\SimpleCRM.Utility.dll" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="SimpleCRM.Model" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="SimpleCRM.Utility" #>
+<#@ output extension=".cs" #>
+<#= 
+	new ClassBuilder(
+		new[]{typeof(Contact),typeof(Activity)},
+		"SimpleCRM.UI.WPF.ViewModels",new[]{"SimpleCRM.Model"}).ToString()  
+#>

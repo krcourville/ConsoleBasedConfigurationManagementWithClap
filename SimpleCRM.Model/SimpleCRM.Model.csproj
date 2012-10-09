@@ -45,10 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity.cs" />
     <Compile Include="Address.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Name.cs" />
-    <Compile Include="PhoneNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
